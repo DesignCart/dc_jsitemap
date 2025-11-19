@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade" version="5.0" task="true">
+    <name>PLG_SYSTEM_DCSITEMAP</name>
+    <author>Design Cart</author>
+    <creationDate>2025-11-19</creationDate>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_DCSITEMAP_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="dc_jsitemap">dc_jsitemap.php</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_dc_jsitemap.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_dc_jsitemap.sys.ini</language>
+
+        <language tag="pl-PL">language/pl-PL/pl-PL.plg_system_dc_jsitemap.ini</language>
+        <language tag="pl-PL">language/pl-PL/pl-PL.plg_system_dc_jsitemap.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic" label="PLG_SYSTEM_DCSITEMAP_FIELDSET_BASIC">
+
+                <!-- Include articles -->
+                <field
+                    name="include_articles"
+                    type="radio"
+                    label="PLG_SYSTEM_DCSITEMAP_INCLUDE_ARTICLES_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_INCLUDE_ARTICLES_DESC"
+                    default="1">
+                    <option value="1">PLG_SYSTEM_DCSITEMAP_OPTION_YES</option>
+                    <option value="0">PLG_SYSTEM_DCSITEMAP_OPTION_NO</option>
+                </field>
+
+                <!-- Priority articles -->
+                <field
+                    name="priority_articles"
+                    type="list"
+                    label="PLG_SYSTEM_DCSITEMAP_PRIORITY_ARTICLES_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_PRIORITY_ARTICLES_DESC"
+                    default="0.6">
+                    <option value="1.0">PLG_SYSTEM_DCSITEMAP_PRIORITY_10</option>
+                    <option value="0.8">PLG_SYSTEM_DCSITEMAP_PRIORITY_08</option>
+                    <option value="0.6">PLG_SYSTEM_DCSITEMAP_PRIORITY_06</option>
+                    <option value="0.4">PLG_SYSTEM_DCSITEMAP_PRIORITY_04</option>
+                    <option value="0.2">PLG_SYSTEM_DCSITEMAP_PRIORITY_02</option>
+                </field>
+
+                <!-- Include categories -->
+                <field
+                    name="include_categories"
+                    type="radio"
+                    label="PLG_SYSTEM_DCSITEMAP_INCLUDE_CATEGORIES_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_INCLUDE_CATEGORIES_DESC"
+                    default="1">
+                    <option value="1">PLG_SYSTEM_DCSITEMAP_OPTION_YES</option>
+                    <option value="0">PLG_SYSTEM_DCSITEMAP_OPTION_NO</option>
+                </field>
+
+                <!-- Priority categories -->
+                <field
+                    name="priority_categories"
+                    type="list"
+                    label="PLG_SYSTEM_DCSITEMAP_PRIORITY_CATEGORIES_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_PRIORITY_CATEGORIES_DESC"
+                    default="0.5">
+                    <option value="1.0">PLG_SYSTEM_DCSITEMAP_PRIORITY_10</option>
+                    <option value="0.8">PLG_SYSTEM_DCSITEMAP_PRIORITY_08</option>
+                    <option value="0.6">PLG_SYSTEM_DCSITEMAP_PRIORITY_06</option>
+                    <option value="0.4">PLG_SYSTEM_DCSITEMAP_PRIORITY_04</option>
+                    <option value="0.2">PLG_SYSTEM_DCSITEMAP_PRIORITY_02</option>
+                </field>
+
+                <!-- Include menu -->
+                <field
+                    name="include_menu"
+                    type="radio"
+                    label="PLG_SYSTEM_DCSITEMAP_INCLUDE_MENU_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_INCLUDE_MENU_DESC"
+                    default="1">
+                    <option value="1">PLG_SYSTEM_DCSITEMAP_OPTION_YES</option>
+                    <option value="0">PLG_SYSTEM_DCSITEMAP_OPTION_NO</option>
+                </field>
+
+                <!-- Priority menu -->
+                <field
+                    name="priority_menu"
+                    type="list"
+                    label="PLG_SYSTEM_DCSITEMAP_PRIORITY_MENU_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_PRIORITY_MENU_DESC"
+                    default="0.8">
+                    <option value="1.0">PLG_SYSTEM_DCSITEMAP_PRIORITY_10</option>
+                    <option value="0.8">PLG_SYSTEM_DCSITEMAP_PRIORITY_08</option>
+                    <option value="0.6">PLG_SYSTEM_DCSITEMAP_PRIORITY_06</option>
+                    <option value="0.4">PLG_SYSTEM_DCSITEMAP_PRIORITY_04</option>
+                    <option value="0.2">PLG_SYSTEM_DCSITEMAP_PRIORITY_02</option>
+                </field>
+
+                <field
+                    name="generate_now"
+                    type="note"
+                    label="PLG_SYSTEM_DCSITEMAP_GENERATE_NOW_LABEL"
+                    description="PLG_SYSTEM_DCSITEMAP_GENERATE_NOW_DESC"
+                    class="alert alert-info"
+                />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

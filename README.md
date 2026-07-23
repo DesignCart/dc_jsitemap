@@ -19,4 +19,7 @@ Once installed, the plugin checks your sitemap on each frontend request and auto
   The plugin uses a lightweight, front-end trigger mechanism compatible with all hosting environments.
 
 - **Manual generation (optional)**  
-  Trigger generation manually via:  
+  Trigger generation manually via:
+
+  <p>👨‍💻 author: <a href="https://www.designcart.pl/pawel-nosko.html">Paweł Nosko</a></p>
+  <p>Project page: <a href="https://www.designcart.pl/laboratorium/266-generator-mapy-strony-w-xml-dla-joomla-darmowy-plugin.html">DC Sitemap</a></p>
